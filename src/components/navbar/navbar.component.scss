@@ -1,0 +1,96 @@
+.tellco-navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9998;
+
+  .navigation-container {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+    background-color: #ccc;
+  }
+
+  .logo {
+    height: 80px;
+    margin-left: 10px;
+  }
+
+  .search-container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin: 0 5%;
+    padding: 5px;
+    width: 60%;
+
+    input {
+      border: none;
+      height: 26px;
+      padding: 5px;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      background-color: white;
+      border: none;
+      border-left: 1px solid #ccc;
+      flex-basis: 15%;
+      height: 36px;
+    }
+  }
+
+  .cart-widget {
+    background-color: #E41A15;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 15%;
+  }
+
+  .auth-container {
+    background-color: #343a40;
+    color: white;
+    text-align: right;
+    padding: 10px 0;
+  }
+
+  .greeting {
+    margin-right: 2%;
+  }
+
+  .login-btn {
+    margin-right: 2%;
+    cursor: pointer;
+
+    &:hover {
+      color: #E41A15;
+    }
+  }
+}
+
+.modal-form {
+  h3 {
+    margin: 5% 0;
+    text-align: center;
+  }
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 10px;
+
+  label {
+    width: 30%;
+    margin-right: 5%;
+  }
+
+  input {
+    width: 70%;
+  }
+}
