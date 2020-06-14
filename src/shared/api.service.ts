@@ -16,8 +16,8 @@ class ApiService {
         return axios.post(BASE_PATH + '/' + ENDPOINT + '/auth/signup', data);
     }
 
-    public getLoggedUser():  Promise<{}> {
-        return axios.get(BASE_PATH + '/' + ENDPOINT + '/loggedUser', { headers: { 'x-access-token' : ''} });
+    public getLoggedUser(token: string):  Promise<{}> {
+        return axios.get(BASE_PATH + '/' + ENDPOINT + '/loggedUser', { headers: { 'x-access-token' : token } });
     }
 }
 
